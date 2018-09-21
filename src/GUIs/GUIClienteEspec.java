@@ -279,6 +279,7 @@ public class GUIClienteEspec extends JDialog {
             public void actionPerformed(ActionEvent ae) {
                 acao = "update";
                 mostrarBotoes(false);
+                btnSave.setEnabled(true);
                 habilitarAtributos(false, false, true, true, true, true);
                 labelAviso.setText("Editando - click [Salvar] ou [Cancelar].");
                 tfCpf.setBackground(corPadrao);
@@ -319,6 +320,10 @@ public class GUIClienteEspec extends JDialog {
                         tfCpf.setText(aux[0]);
                         tfCpf.setBackground(Color.GREEN);
                         labelAviso.setText("Aperte ENTER nos campos ID e click [Pesquisar].");
+                        btnCreate.setEnabled(false);
+                        btnDelete.setEnabled(false);
+                        btnSave.setEnabled(false);
+                        btnUpdate.setEnabled(false);
                         btnRetrieve.setEnabled(true);
                     } else {
                         labelAviso.setText("Aperte ENTER nos campos ID e click [Pesquisar].");
@@ -345,6 +350,10 @@ public class GUIClienteEspec extends JDialog {
                             tfCpf.setBackground(Color.red);
                             btnRetrieve.setEnabled(false);
                         } else {
+                            btnCreate.setEnabled(false);
+                            btnDelete.setEnabled(false);
+                            btnSave.setEnabled(false);
+                            btnUpdate.setEnabled(false);
                             btnRetrieve.setEnabled(true);
                         }
                     } else {
