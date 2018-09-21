@@ -48,6 +48,7 @@ public class GUIMenu extends JFrame {
         JMenuItem tipoContato = new JMenuItem("GUITipoContato");
         JMenuItem horario = new JMenuItem("GUIHorario");
         JMenuItem especialidades = new JMenuItem("GUIEspecialidades");
+        JMenuItem clienteEspecialidades = new JMenuItem("GUIClienteHasEspecialidades");
 
         fileMenu.add(cliente);
         fileMenu.addSeparator();
@@ -56,6 +57,7 @@ public class GUIMenu extends JFrame {
         fileMenu2.add(tipoContato);
         fileMenu3.add(horario);
         fileMenu3.add(especialidades);
+        fileMenu3.add(clienteEspecialidades);
 
         setVisible(true);
 
@@ -98,6 +100,13 @@ public class GUIMenu extends JFrame {
             @Override
             public void actionPerformed(ActionEvent e) {
                 GUIEspecialidades guiEspecialidades = new GUIEspecialidades();
+            }
+        });
+        
+        clienteEspecialidades.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                GUIClienteEspec guiClienteEspec = new GUIClienteEspec();
             }
         });
 

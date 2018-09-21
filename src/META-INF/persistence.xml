@@ -2,14 +2,14 @@
 <persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
   <persistence-unit name="UP" transaction-type="RESOURCE_LOCAL">
     <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>Entidades.TipoContato</class>
     <class>Entidades.Sexo</class>
-    <class>Entidades.ClienteHasEspecialidades</class>
-    <class>Entidades.Especialidades</class>
     <class>Entidades.Contato</class>
     <class>Entidades.Cliente</class>
     <class>Entidades.Horario</class>
+    <class>Entidades.Especialidades</class>
+    <class>Entidades.ClienteHasEspecialidades</class>
     <class>Entidades.ClienteHasHorario</class>
-    <class>Entidades.TipoContato</class>
     <properties>
       <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/clinica_noventa_graus?zeroDateTimeBehavior=convertToNull"/>
       <property name="javax.persistence.jdbc.user" value="root"/>
