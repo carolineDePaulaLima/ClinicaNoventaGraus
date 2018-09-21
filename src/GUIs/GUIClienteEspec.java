@@ -205,6 +205,7 @@ public class GUIClienteEspec extends JDialog {
                 habilitarAtributos(false, false, true, true, true, true);
                 tfQtdSecao.requestFocus();
                 mostrarBotoes(false);
+                btnSave.setEnabled(true);
                 labelAviso.setText("Preencha os campos e clic [Salvar] ou click [Cancelar].");
                 acao = "insert";
                 tfIdEspecialidade.setBackground(corPadrao);
